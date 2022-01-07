@@ -1,35 +1,55 @@
-body{
-    background-color: rgb(11, 106, 122);
-    margin:0px;
+body, html {
+    height: 100vh;
+    margin: 0%;
+    overflow: hidden;
 }
-.center_div{
-    margin:0px 40px 0px 40px;
-    background-image:url("external-content.duckduckgo.com.jpg");
+
+.bg {
+    /* border-style: dashed;
+    border-color: rgb(255, 0, 242); */
+    background-image: url("external-content.duckduckgo.com.jpg");
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    /* text-align: center;    */
-    display: flex;
-    justify-content: center;
-    position:relative;
-    padding-bottom: 80px;
+    text-align: center;
+    position: relative;
+    
+  }
+
+.frame{
+    /* border-style: dashed;
+    border-color: rgb(0, 238, 255); */
+    position:absolute;
+    /* margin-left:auto; */
+    /* margin-right:auto; */
+    /* width:25%; */
+    /* width: 470px; */
+    /* margin: 0px; */
+    height:98vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.can{
+    /* border-style:dashed;
+    border-color:red; */
+    background-image: url(https://t3.ftcdn.net/jpg/01/81/20/64/240_F_181206484_B7des4LZ7AqYdvfDY3JtQi7zowsHeZMg.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: absolute;
+    /* display: inline; */
+    /* padding: 0px; */
+    /* margin: 0px; */
+    /* margin-top:160px; */
+    border-radius: 50%;
+    width:59vh;
+    height:60vh;
+    bottom:15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
-.can{
-    background-image: url(https://t3.ftcdn.net/jpg/01/81/20/64/240_F_181206484_B7des4LZ7AqYdvfDY3JtQi7zowsHeZMg.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display:inline;
-    padding: 0px;
-    margin: 0px;
-    margin-top:160px;
-    border-radius: 50%;
-    height: 500px;
-    width: 470px;
 
-
-}
-img{
-  position:absolute;
-  width: 470px;
-  margin: 0px;
-  /* height:100vh; */
-}
