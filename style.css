@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(11, 106, 122);
+    margin:0px;
+}
+.center_div{
+    margin:0px 40px 0px 40px;
+    background-image:url("external-content.duckduckgo.com.jpg");
+    background-size: cover;
+    text-align: center;   
+    display: flex;
+    justify-content: center;
+    position:relative;
+    padding-bottom: 80px;
+    
+}
+.can{
+    background-image: url(https://t3.ftcdn.net/jpg/01/81/20/64/240_F_181206484_B7des4LZ7AqYdvfDY3JtQi7zowsHeZMg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:inline;
+    padding: 0px;
+    margin: 20px;
+    margin-top:160px;
+    border-radius: 50%;
+    height: 70vh;
+    width: 60vh;
+
+
+}
+img{
+  position:absolute;
+  margin:0px;
+  height:100vh;
+}
