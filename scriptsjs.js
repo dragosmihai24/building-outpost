@@ -1,6 +1,4 @@
-
 window.onload=()=>{
- 
 var canvas = document.getElementById('can');
 var context=canvas.getContext('2d');
 var video = document.getElementById('video');
@@ -24,8 +22,9 @@ function render(){
     }, 0);
 }
 
-img = document.getElementById('image');
+img = document.getElementById('frame');
 img.addEventListener("click",render);
-
-
 }
+
+
+
