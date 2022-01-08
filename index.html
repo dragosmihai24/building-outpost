@@ -8,14 +8,41 @@
     </head>
     <body>
 
-        <!-- Background < Mirror Frame -->
-        <div class="bg">
-            <canvas id="can" class ="can">not working</canvas>
-            <img id="image" class="frame" src="168-1688531_vintage-mirror-png.png"/>
+        <script>
+            function alive(){
+                document.getElementById('pigeon_s').style.opacity = 0;
+                document.getElementById('pigeon_d').style.opacity = 1;
+                document.getElementById('pigeon_d').style.backgroundColor = 'rgba(59, 220, 116, 0.48)'
+                document.getElementById('pigeon_a').play();   
+            }
+
+            function dead(){
+                document.getElementById('pigeon_d').style.opacity = 0;
+                document.getElementById('pigeon_s').style.opacity = 1;
+                document.getElementById('pigeon_a').pause();
+                document.getElementById('pigeon_a').currentTime = 0;
+            }
+        </script>
+
+        <!-- Background  < Mirror < Mirror Frame -->
+        <div id="bg">
+            <!--Visual Stuff-->
+            <canvas id ="can">not working</canvas>
+            <img id="frame" src="168-1688531_vintage-mirror-png.png"/>
+            
+            <img id="pigeon_s" src="graphics\pigeon_frames\pigeon-1.png"/>
+            
+            <img id="pigeon_d" src="graphics\pigeon.gif" 
+            onmouseover="alive()" onmouseleave="dead()"/>
+
+            <!--Audio Stuff-->
+            <audio id="pigeon_a" src="audio\pigeon.mp3"></audio>
+
+
         </div>
 
         <!-- Mirror Video -->
-        <div class="vid">
+        <div id="vid">
             <video id="video" width="0px" height="0px" autoplay="true"></video>
         </div>
 

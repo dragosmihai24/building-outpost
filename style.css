@@ -6,10 +6,7 @@ body, html {
     
 }
 
-.bg {
-    /* border-style: dashed;
-    border-color: rgb(255, 0, 242); */
-    
+#bg {  
     background-image: url("external-content.duckduckgo.com.jpg");
     height: 100vh; 
     background-position: center;
@@ -17,14 +14,9 @@ body, html {
     background-size: cover;
     text-align: center;
     position: relative;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
   }
 
-.frame{
-    /* border-style: dashed;
-    border-color: rgb(0, 238, 255); */
+#frame{
     position: absolute;
     height:98vh;
     width:120vh;
@@ -33,9 +25,7 @@ body, html {
     transform: translate(-50%, -50%);
   }
 
-.can{
-    /* border-style:dashed;
-    border-color:red; */
+#can{
     background-image: url(https://t3.ftcdn.net/jpg/01/81/20/64/240_F_181206484_B7des4LZ7AqYdvfDY3JtQi7zowsHeZMg.jpg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -47,6 +37,19 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
+
+#pigeon_s{
+  position: absolute;
+  width:20vh;
+  transform: translate(300%, 160%) scaleX(-1);
+}
+
+#pigeon_d{
+  position: absolute;
+  width:20vh;
+  transform: translate(300%, 160%) scaleX(-1);
+  opacity: 0;
+}
+
 
