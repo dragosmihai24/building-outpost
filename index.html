@@ -7,38 +7,44 @@
         
     </head>
     <body>
-
-        <script>
-            function alive(){
-                document.getElementById('pigeon_s').style.opacity = 0;
-                document.getElementById('pigeon_d').style.opacity = 1;
-                document.getElementById('pigeon_d').style.backgroundColor = 'rgba(59, 220, 116, 0.48)'
-                document.getElementById('pigeon_a').play();   
-            }
-
-            function dead(){
-                document.getElementById('pigeon_d').style.opacity = 0;
-                document.getElementById('pigeon_s').style.opacity = 1;
-                document.getElementById('pigeon_a').pause();
-                document.getElementById('pigeon_a').currentTime = 0;
-            }
-        </script>
-
+        
         <!-- Background  < Mirror < Mirror Frame -->
         <div id="bg">
             <!--Visual Stuff-->
-            <canvas id ="can">not working</canvas>
-            <img id="frame" src="168-1688531_vintage-mirror-png.png"/>
+            <canvas id ="can" >not working</canvas>
+            <img id="frame" src="168-1688531_vintage-mirror-png.png" onclick="removeFilter()"/>
             
+            <!--Geolocation-->
+            <img id="globe_s" src="graphics\globe.png"/>
+
+            <img id="globe_d" src="graphics\globe.gif" onclick="getLocation()" 
+            onmouseover="alive(id)" onmouseleave="dead(id)" onclick="getLocation()"/>
+            
+            <!--Animated-->
             <img id="pigeon_s" src="graphics\pigeon_frames\pigeon-1.png"/>
             
             <img id="pigeon_d" src="graphics\pigeon.gif" 
-            onmouseover="alive()" onmouseleave="dead()"/>
+            onmouseover="alive(id)" onmouseleave="dead(id)" onclick="colorFilter(id)"/>
 
-            <!--Audio Stuff-->
+            <!--Static-->
+
+            <!-- <img id="ciuperci_s" src="graphics\ciuperci.png" onclick="colorFilter(id)"/> -->
+            <!-- <img id="cos_s" src="graphics\cos.png" onclick="colorFilter(id)"/> -->
+            <img id="creanga_s" src="graphics\creanga.png" onclick="colorFilter(id)"/>
+            <!-- <img id="flutureMaro_s" src="graphics\flutureMaro.png" onclick="colorFilter(id)"/> -->
+            <!-- <img id="gerbera_s" src="graphics\gerbera.png" onclick="colorFilter(id)"/> -->
+            <!-- <img id="lalele_s" src="graphics\lalele.png" onclick="colorFilter(id)"/> -->
+            <!-- <img id="liliac_s" src="graphics\liliac.png" onclick="colorFilter(id)"/> -->
+            <!-- <img id="mere_s" src="graphics\mere.png" onclick="colorFilter(id)"/> -->
+            <!-- <img id="miere_s" src="graphics\miere.png" onclick="colorFilter(id)"/> -->
+            <img id="sakura_s" src="graphics\sakura.png" onclick="colorFilter(id)"/>
+            <img id="treiTrandafiri_s" src="graphics\treiTrandafiri.png" onclick="colorFilter(id)"/>
+
+            <!--Load Message-->
+            <div id="message" onclick="fadeMessage()">enjoy</div>
+
+            <!--Audio -->
             <audio id="pigeon_a" src="audio\pigeon.mp3"></audio>
-
-
         </div>
 
         <!-- Mirror Video -->
@@ -48,3 +54,30 @@
 
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

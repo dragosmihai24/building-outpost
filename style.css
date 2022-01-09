@@ -2,13 +2,14 @@ body, html {
     height: 100vh;
     margin: 0%;
     background-color:rgb(0, 96, 134);
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     
 }
 
 #bg {  
     background-image: url("external-content.duckduckgo.com.jpg");
-    height: 100vh; 
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +20,7 @@ body, html {
 #frame{
     position: absolute;
     height:98vh;
-    width:120vh;
+    width:98vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -31,25 +32,296 @@ body, html {
     background-size:cover;
     position: absolute;
     border-radius: 50%;
-    width:98vh;
+    width:95vh;
     height:60vh;
     bottom:15%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+}
+
+#message{
+  background-color: rgba(137, 43, 226, 0.247);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100vh;
+  position: relative;
+  font-size: 20vh;
+  font-weight: 800;
+  font-style: italic;
+  user-select: none;
+  visibility: hidden; /*DELETE!*/
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+#globe_s{
+  position:absolute;
+  width:15vh;
+  transform: translate(200%, 300%)
+}
+
+#globe_d{
+  position:absolute;
+  width:15vh;
+  transform: translate(200%, 300%);
+  opacity:0;
+}
+
+#abur_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#abur_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#albina_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#albina_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+a#ltePasarele_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#altePasarele_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#cafea_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#cafea_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#ceai_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#ceai_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#ciuperci_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#cos_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#cotofana_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#cotofana_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#creanga_s{
+  position: absolute;
+  width:40vh;
+  right: -3px;
+  top: -3px;
+  
+}
+
+#flutureGalben_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#flutureGalben_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#flutureMaro_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#gerbera_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#graur_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#graur_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#lalele_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#liliac_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#mere_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#miere_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#pasarele_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#pasarele_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
 }
 
 #pigeon_s{
   position: absolute;
-  width:20vh;
-  transform: translate(300%, 160%) scaleX(-1);
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
 }
 
 #pigeon_d{
   position: absolute;
-  width:20vh;
-  transform: translate(300%, 160%) scaleX(-1);
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
   opacity: 0;
 }
+
+#sakura_s{
+  position: absolute;
+  width:50vh;
+  left: 0px;
+  top: 0px;
+}
+
+#trandafir_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#trandafir_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#treiTrandafiri_s{
+  position: absolute;
+  width:30vh;
+  transform: translate(-200%, 80%);
+
+}
+
+#vrabie_s{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+#vrabie_d{
+  position: absolute;
+  width:15vh;
+  transform: translate(500%, 300%) scaleX(-1);
+
+}
+
+
 
 
